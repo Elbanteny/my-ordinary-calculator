@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+float n1,n2,hasil; 
+int menu;
+kembali :
+printf ("kalkulator sederhana\n");
+printf ("1.pertambahan\n");
+printf ("2.pengurangan\n");
+printf ("3.perkalian\n");
+printf ("4.pembagian\n");
+printf ("masukan pilihan : ");
+scanf ("%d" ,&menu);
+switch (menu){
+case 1 :
+  printf ("masukan nilai 1 : ");
+  scanf ("%f", &n1);
+  printf ("masukan nilai 2 : ");
+  scanf ("%f", &n2);
+  hasil = n1+n2;
+  printf ("%f",hasil);
+  break; 
+case 2 :
+  printf ("masukan nilai 1 : ");
+  scanf ("%f", &n1);
+  printf ("masukan nilai 2 : ");
+  scanf ("%f", &n2);
+  hasil = n1-n2;
+  printf ("%f",hasil);
+  break; 
+case 3 :
+  printf ("masukan nilai 1 : ");
+  scanf ("%f", &n1);
+  printf ("masukan nilai 2 : ");
+  scanf ("%f", &n2);
+  hasil = n1*n2;
+  printf ("%f",hasil);
+  break; 
+case 4 :
+  printf ("masukan nilai 1 : ");
+  scanf ("%f", &n1);
+  printf ("masukan nilai 2 : ");
+  scanf ("%f", &n2);
+  hasil = n1/n2;
+  printf ("%f",hasil); 
+  break; 
+}
+printf ("masukan 1 untuk kembali atau 2 untuk keluar");
+scanf ("%d", &menu);
+switch (menu){
+case 1 :
+  goto kembali; 
+case 2 :
+  goto keluar; 
+}
+  keluar :
+    return 0;
+
+}
